@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!--    Inizialmente avevo pensato di usare bootstrap per rapidità, ma quando inizi a customizzare troppo diventa-->
+<!--    un labirinto, quindi mi sono scritto tutto, compresa la navbar. L'ho tenuto solo per margini e padding-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+
+<!--    Le icone free sono tutte solide, nella versione pro ci sono light e thin: userei quelle-->
+    <script src="https://use.fontawesome.com/38789338d1.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="css/lotrek.css">
+    <title>Landing - Lotrek</title>
+</head>
+
+
+<body class="bg-landing-white">
+
+    <nav class="topnav bg-white" id="topNav">
+        <div class="brand-container">
+            <a class="brand" href="#">
+                <img src="img/logo_black.svg" width="42" height="52" alt="lotrek_logo_black">
+            </a>
+        </div>
+        <div class="link-container">
+            <a class="nav-custom-link" href="#">News</a>
+            <a class="nav-custom-link" href="#">Products</a>
+            <a class="nav-custom-link" href="#">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon pr-5" onclick="toggleMenu()">
+            <i class="fa fa-bars show-icon" id="openIcon"></i>
+            <i class="fa fa-times hide-icon" id="closeIcon"></i>
+        </a>
+    </nav>
+
+    <figure class="grid-parent">
+        <img class="grid-child-main-image header-image" src="img/mountain.png" alt="logo-white">
+        <div class="grid-child-white-box">
+            <p class="caption text-dark-gray">LOREM IPSUM</p>
+            <p class="title text-red">Suspendisse blandit sollicitudin enim, a sagittis consectetur.</p>
+            <p class="text-l text-black">Class aptent taciti sociosqu ad litora torquen.</p>
+        </div>
+    </figure>
+
+
+    <article class="grid-parent bg-gray">
+        <div class="grid-child-card-header">
+            <p class="caption text-black text-center">
+                LOREM IPSUM
+            </p>
+            <p class="title text-red text-center mb-0">
+                Ut laoreet posuere sem
+            </p>
+            <p class="text-l text-black text-center mt-0">
+                at viverra justo viverra sed
+            </p>
+        </div>
+        <div class="grid-card grid-child-card-1">
+            <img class="grid-card-image" src="img/drop_dark_red.svg" alt="logo-white">
+            <p class="title-3 text-dark-red text-center">Pellentesque</p>
+            <p class="text-m text-center text-dark-gray">fermentum augue eget erat egestas pretium</p>
+        </div>
+        <div class="grid-card grid-child-card-2">
+            <img class="grid-card-image" src="img/drop_red.svg" alt="logo-white">
+            <p class="title-3 text-red text-center">Pellentesque</p>
+            <p class="text-m text-center text-dark-gray">Aenean posuere neque ante</p>
+        </div>
+        <div class="grid-card grid-child-card-3">
+            <img class="grid-card-image" src="img/drop_light_red.svg" alt="logo-white">
+            <p class="title-3 text-light-red text-center">Pellentesque</p>
+            <p class="text-m text-center text-dark-gray">Nam malesuada ac massa id accumsan</p>
+        </div>
+    </article>
+
+
+    <article class="grid-parent bg-white bg-gradient">
+        <div class="grid-child-split-title text-red pt-3">
+            <p class="title">Suspendisse potenti fusce accumsan</p>
+        </div>
+        <div class="grid-child-split-text">
+            <p class="text-m text-justify text-dark-gray">
+                Pellentesque fermentum augue eget erat egestas pretium. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas. Nunc lobortis eros ut magna dignissim
+                tristique. Aenean posuere neque ante, lobortis eleifend turpis vulputate nec. Nam malesuada ac
+                massa id accumsan. Donec ullamcorper purus eget nibh convallis rhoncus. Donec feugiat risus at
+                erat sollicitudin, nec laoreet tortor tempor. Sed vitae rutrum tellus. Pellentesque quis ligula
+                turpis. Sed maximus faucibus arcu luctus venenatis.
+            </p>
+        </div>
+    </article>
+
+
+    <article class="grid-parent bg-white">
+        <div class="grid-child-text-block">
+            <p class="caption-2 text-dark-gray">Maecenas eleifend,</p>
+            <p class="title text-red">Quisque porttitor nunc elit.  </p>
+            <p class="text-m text-dark-gray text-justify">
+                Maecenas eleifend, magna vitae volutpat ultricies, est nibh volutpat sapien, ac malesuada
+                urna arcu euismod leo. Maecenas convallis nisl erat, ac dignissim velit ornare sit amet.
+                Suspendisse mattis, urna et finibus consectetur, nisl arcu sodales sem, quis tristique ex lacus
+                ac risus. Donec odio ipsum, mollis feugiat vestibulum eget, posuere sit amet erat. Quisque
+                porttitor nunc elit. Mauris nec nisl faucibus, semper erat eget, feugiat velit.<br><br>
+                Ut nec ullamcorper odio. Sed in ultrices mauris. Pellentesque sit amet urna eget erat lobortis
+                rutrum. Fusce ut est est. In condimentum vestibulum diam at lobortis.
+            </p>
+        </div>
+    </article>
+
+
+    <section class="grid-parent bg-dark-red">
+        <figure class="grid-child-contact-1">
+            <img src="img/logo_white.svg" width="70" height="88" alt="logo">
+        </figure>
+        <div class="grid-child-contact-2">
+            <p class="text-s text-white mt-3 mb-0">
+                Lorem SpA
+            </p>
+            <p class="text-xs text-white">Via Rossi, 42 SP 23 Km 1.300 <br> 0000 Milano (Mi) ITALY</p>
+        </div>
+        <div class="grid-child-contact-3 text-white pt-5">
+            <p class="text-xs mb-1">CONTATTI</p>
+            <p class="text-xs mb-1">Tel. +39 542 345123</p>
+            <p class="text-xs mb-1">Fax +39 02 2345344</p>
+            <p class="text-xs">info@company.it</p>
+        </div>
+        <div class="grid-child-contact-4 text-white pt-5">
+            <p class="text-xs">SOCIAL</p>
+            <img style="margin-right: 1rem" src="img/facebook.svg" alt="facebook_logo">
+            <img style="margin-right: 1rem" src="img/instagram.svg" alt="instagram_logo">
+            <img style="margin-right: 1rem" src="img/twitter.svg" alt="twitter_logo">
+        </div>
+    </section>
+
+
+    <footer class="grid-parent bg-black py-3">
+        <div class="grid-child-footer-1">
+            <p class="text-white text-xs">© copyright 2022 Lorem SpA</p>
+        </div>
+        <div class="grid-child-footer-2">
+            <p class="text-white text-xs"><a class="text-white text-xs" href="#">Privacy</a></p>
+        </div>
+        <div class="grid-child-footer-3">
+            <p class="text-white text-xs"><a class="text-white text-xs" href="#">Cookie</a></p>
+        </div>
+        <div class="grid-child-footer-4">
+            <p class="text-white text-xs"><a class="text-white text-xs" href="#">Termini e condizioni</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            let topNav = document.getElementById("topNav");
+            let openIcon = document.getElementById("openIcon");
+            let closeIcon = document.getElementById("closeIcon");
+
+            if (topNav.classList.contains("responsive")) {
+                topNav.classList.remove('responsive');
+
+                // Soluzione non particolarmente elegante per cambiare icona
+
+                closeIcon.classList.add('hide-icon');
+                closeIcon.classList.remove('show-icon');
+                openIcon.classList.add('show-icon');
+                openIcon.classList.remove('hide-icon');
+            } else {
+                topNav.classList.add('responsive');
+
+                // Soluzione non particolarmente elegante per cambiare icona
+
+                openIcon.classList.add('hide-icon');
+                openIcon.classList.remove('show-icon');
+                closeIcon.classList.add('show-icon');
+                closeIcon.classList.remove('hide-icon');
+            }
+        }
+    </script>
+
+</body>
+</html>

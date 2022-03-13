@@ -1,0 +1,76 @@
+/* Parent */
+
+.grid-parent {
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+
+/* Nav */
+
+.grid-child-header-1{ grid-area: 1 / 2 / 13 / 4; }
+
+.grid-child-header-2{
+    display: inline-flex;
+    grid-area: 2 / 12 / 13 / 12;
+}
+
+/* Main image */
+
+.grid-child-main-image {
+    grid-area: 1 / 1 / 13 / 13;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.grid-child-white-box{
+    background-color: #FFFFFF;
+    padding: 10% 5% 10% 5%;
+    grid-area: 5 / 2 / 11 / 7;
+}
+
+
+/* Card elements */
+
+.grid-child-card-header{ grid-area: 2 / 3 / 5 / 11; }
+
+.grid-child-card-1{ grid-area: 5 / 3 / 11 / 5; }
+
+.grid-child-card-2{ grid-area: 5 / 6 / 11 / 8; }
+
+.grid-child-card-3{ grid-area: 5 / 9 / 11 / 11; }
+
+
+/* Title + text children */
+
+.grid-child-split-title { grid-area: 4 / 3 / 10 / 5; }
+
+.grid-child-split-text { grid-area: 4 / 6 / 10 / 11; }
+
+/* Text block child */
+
+.grid-child-text-block { grid-area: 4 / 3 / 10 / 11; }
+
+/* Contacts children */
+
+.grid-child-contact-1{ grid-area: 2 / 2 / 7 / 4; }
+
+.grid-child-contact-2{ grid-area: 7 / 2 / 13 / 4; }
+
+.grid-child-contact-3{ grid-area: 2 / 6 / 12 / 8; }
+
+.grid-child-contact-4{ grid-area: 2 / 9 / 12 / 11; }
+
+/* Footer children */
+
+.grid-child-footer-1{ grid-area: 1 / 2 / 13 / 4; }
+
+.grid-child-footer-2{ grid-area: 1 / 6 / 13 / 7; }
+
+.grid-child-footer-3{ grid-area: 1 / 8 / 13 / 9; }
+
+.grid-child-footer-4{ grid-area: 1 / 10 / 13 / 12; }
