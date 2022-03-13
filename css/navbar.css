@@ -27,7 +27,7 @@
 }
 
 .topnav .nav-custom-link:hover{
-  color: #D2D2D2;
+  color: #737373;
 }
 
 .topnav .icon {
@@ -66,9 +66,6 @@
     font-size: 28px;
     text-decoration: none;
     color: #3D3D3D;
-  }
-  .topnav .icon:hover {
-    color: #D2D2D2;
   }
 }
 

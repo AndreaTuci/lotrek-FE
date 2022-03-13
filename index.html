@@ -30,115 +30,132 @@
     <nav class="topnav bg-white" id="topNav">
         <div class="brand-container">
             <a class="brand" href="#">
-                <img src="img/logo_black.svg" width="42" height="52" alt="lotrek_logo_black">
+                <img src="img/logo_black.svg" width="42" height="52" alt="Ciao da Lotrek">
             </a>
         </div>
         <div class="link-container">
-            <a class="nav-custom-link" href="#">News</a>
-            <a class="nav-custom-link" href="#">Products</a>
-            <a class="nav-custom-link" href="#">About</a>
+            <a class="nav-custom-link" href="#" aria-label="Leggi le news da Lotrek">News</a>
+            <a class="nav-custom-link" href="#" aria-label="Conosci i nostri prodotti">Products</a>
+            <a class="nav-custom-link" href="#" aria-label="Scopri chi siamo">About</a>
         </div>
         <a href="javascript:void(0);" class="icon pr-5" onclick="toggleMenu()">
-            <i class="fa fa-bars show-icon" id="openIcon"></i>
-            <i class="fa fa-times hide-icon" id="closeIcon"></i>
+            <i class="fa fa-bars show-icon"
+               id="openIcon"
+               role="button"
+               aria-hidden="false"
+               aria-label="Apri il menu di navigazione"></i>
+            <i class="fa fa-times hide-icon"
+               id="closeIcon"
+               role="button"
+               aria-hidden="false"
+               aria-label="Chiudi il menu di navigazione"></i>
         </a>
     </nav>
-
-    <figure class="grid-parent">
-        <img class="grid-child-main-image header-image" src="img/mountain.png" alt="logo-white">
-        <div class="grid-child-white-box">
-            <p class="caption text-dark-gray">LOREM IPSUM</p>
-            <p class="title text-red">Suspendisse blandit sollicitudin enim, a sagittis consectetur.</p>
-            <p class="text-l text-black">Class aptent taciti sociosqu ad litora torquen.</p>
-        </div>
-    </figure>
-
-
-    <article class="grid-parent bg-gray">
-        <div class="grid-child-card-header">
-            <p class="caption text-black text-center">
-                LOREM IPSUM
-            </p>
-            <p class="title text-red text-center mb-0">
-                Ut laoreet posuere sem
-            </p>
-            <p class="text-l text-black text-center mt-0">
-                at viverra justo viverra sed
-            </p>
-        </div>
-        <div class="grid-card grid-child-card-1">
-            <img class="grid-card-image" src="img/drop_dark_red.svg" alt="logo-white">
-            <p class="title-3 text-dark-red text-center">Pellentesque</p>
-            <p class="text-m text-center text-dark-gray">fermentum augue eget erat egestas pretium</p>
-        </div>
-        <div class="grid-card grid-child-card-2">
-            <img class="grid-card-image" src="img/drop_red.svg" alt="logo-white">
-            <p class="title-3 text-red text-center">Pellentesque</p>
-            <p class="text-m text-center text-dark-gray">Aenean posuere neque ante</p>
-        </div>
-        <div class="grid-card grid-child-card-3">
-            <img class="grid-card-image" src="img/drop_light_red.svg" alt="logo-white">
-            <p class="title-3 text-light-red text-center">Pellentesque</p>
-            <p class="text-m text-center text-dark-gray">Nam malesuada ac massa id accumsan</p>
-        </div>
-    </article>
-
-
-    <article class="grid-parent bg-white bg-gradient">
-        <div class="grid-child-split-title text-red pt-3">
-            <p class="title">Suspendisse potenti fusce accumsan</p>
-        </div>
-        <div class="grid-child-split-text">
-            <p class="text-m text-justify text-dark-gray">
-                Pellentesque fermentum augue eget erat egestas pretium. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Nunc lobortis eros ut magna dignissim
-                tristique. Aenean posuere neque ante, lobortis eleifend turpis vulputate nec. Nam malesuada ac
-                massa id accumsan. Donec ullamcorper purus eget nibh convallis rhoncus. Donec feugiat risus at
-                erat sollicitudin, nec laoreet tortor tempor. Sed vitae rutrum tellus. Pellentesque quis ligula
-                turpis. Sed maximus faucibus arcu luctus venenatis.
-            </p>
-        </div>
-    </article>
+    <header role="banner">
+        <figure class="grid-parent">
+            <img class="grid-child-main-image header-image" src="img/mountain.png" alt="Una montagna innevata immersa nelle nuvole">
+            <figcaption class="grid-child-white-box">
+                <h2 class="caption text-dark-gray">LOREM IPSUM</h2>
+                <h1 class="title text-red">Suspendisse blandit sollicitudin enim, a sagittis consectetur.</h1>
+                <h3 class="text-l text-black">Class aptent taciti sociosqu ad litora torquen.</h3>
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <article class="grid-parent bg-gray">
+            <div class="grid-child-card-header">
+                <h2 class="caption text-black text-center">
+                    LOREM IPSUM
+                </h2>
+                <h1 class="title text-red text-center mb-0">
+                    Ut laoreet posuere sem
+                </h1>
+                <h3 class="text-l text-black text-center mt-0">
+                    at viverra justo viverra sed
+                </h3>
+            </div>
+            <div class="grid-card grid-child-card-1">
+                <img class="grid-card-image" src="img/drop_dark_red.svg" alt="Una goccia rosso scuro">
+                <h4 class="title-3 text-dark-red text-center">Pellentesque</h4>
+                <p class="text-m text-center text-dark-gray">fermentum augue eget erat egestas pretium</p>
+            </div>
+            <div class="grid-card grid-child-card-2">
+                <img class="grid-card-image" src="img/drop_red.svg" alt="Una goccia rossa">
+                <h4 class="title-3 text-red text-center">Pellentesque</h4>
+                <p class="text-m text-center text-dark-gray">Aenean posuere neque ante</p>
+            </div>
+            <div class="grid-card grid-child-card-3">
+                <img class="grid-card-image" src="img/drop_light_red.svg" alt="Una goccia rosso chiaro">
+                <h4 class="title-3 text-light-red text-center">Pellentesque</h4>
+                <p class="text-m text-center text-dark-gray">Nam malesuada ac massa id accumsan</p>
+            </div>
+        </article>
 
 
-    <article class="grid-parent bg-white">
-        <div class="grid-child-text-block">
-            <p class="caption-2 text-dark-gray">Maecenas eleifend,</p>
-            <p class="title text-red">Quisque porttitor nunc elit.  </p>
-            <p class="text-m text-dark-gray text-justify">
-                Maecenas eleifend, magna vitae volutpat ultricies, est nibh volutpat sapien, ac malesuada
-                urna arcu euismod leo. Maecenas convallis nisl erat, ac dignissim velit ornare sit amet.
-                Suspendisse mattis, urna et finibus consectetur, nisl arcu sodales sem, quis tristique ex lacus
-                ac risus. Donec odio ipsum, mollis feugiat vestibulum eget, posuere sit amet erat. Quisque
-                porttitor nunc elit. Mauris nec nisl faucibus, semper erat eget, feugiat velit.<br><br>
-                Ut nec ullamcorper odio. Sed in ultrices mauris. Pellentesque sit amet urna eget erat lobortis
-                rutrum. Fusce ut est est. In condimentum vestibulum diam at lobortis.
-            </p>
-        </div>
-    </article>
+        <article class="grid-parent bg-white bg-gradient">
+            <div class="grid-child-split-title text-red pt-3">
+                <h1 class="title">Suspendisse potenti fusce accumsan</h1>
+            </div>
+            <div class="grid-child-split-text">
+                <p class="text-m text-justify text-dark-gray">
+                    Pellentesque fermentum augue eget erat egestas pretium. Pellentesque habitant morbi tristique
+                    senectus et netus et malesuada fames ac turpis egestas. Nunc lobortis eros ut magna dignissim
+                    tristique. Aenean posuere neque ante, lobortis eleifend turpis vulputate nec. Nam malesuada ac
+                    massa id accumsan. Donec ullamcorper purus eget nibh convallis rhoncus. Donec feugiat risus at
+                    erat sollicitudin, nec laoreet tortor tempor. Sed vitae rutrum tellus. Pellentesque quis ligula
+                    turpis. Sed maximus faucibus arcu luctus venenatis.
+                </p>
+            </div>
+        </article>
 
 
-    <section class="grid-parent bg-dark-red">
+        <article class="grid-parent bg-white">
+            <div class="grid-child-text-block">
+                <h2 class="caption-2 text-dark-gray">Maecenas eleifend,</h2>
+                <h1 class="title text-red">Quisque porttitor nunc elit.  </h1>
+                <p class="text-m text-dark-gray text-justify">
+                    Maecenas eleifend, magna vitae volutpat ultricies, est nibh volutpat sapien, ac malesuada
+                    urna arcu euismod leo. Maecenas convallis nisl erat, ac dignissim velit ornare sit amet.
+                    Suspendisse mattis, urna et finibus consectetur, nisl arcu sodales sem, quis tristique ex lacus
+                    ac risus. Donec odio ipsum, mollis feugiat vestibulum eget, posuere sit amet erat. Quisque
+                    porttitor nunc elit. Mauris nec nisl faucibus, semper erat eget, feugiat velit.<br><br>
+                    Ut nec ullamcorper odio. Sed in ultrices mauris. Pellentesque sit amet urna eget erat lobortis
+                    rutrum. Fusce ut est est. In condimentum vestibulum diam at lobortis.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <section class="grid-parent bg-dark-red" aria-label="Sezione dei contatti">
         <figure class="grid-child-contact-1">
-            <img src="img/logo_white.svg" width="70" height="88" alt="logo">
+            <img src="img/logo_white.svg" width="70" height="88" alt="Ciao da Lotrek">
         </figure>
         <div class="grid-child-contact-2">
-            <p class="text-s text-white mt-3 mb-0">
+            <h5 class="text-s text-white mt-3 mb-0">
                 Lorem SpA
-            </p>
+            </h5>
             <p class="text-xs text-white">Via Rossi, 42 SP 23 Km 1.300 <br> 0000 Milano (Mi) ITALY</p>
         </div>
         <div class="grid-child-contact-3 text-white pt-5">
-            <p class="text-xs mb-1">CONTATTI</p>
-            <p class="text-xs mb-1">Tel. +39 542 345123</p>
+            <h5 class="text-xs mb-1">CONTATTI</h5>
+            <p class="text-xs mb-1"><a href="tel:+39542345123">Tel. +39 542 345123</a></p>
             <p class="text-xs mb-1">Fax +39 02 2345344</p>
-            <p class="text-xs">info@company.it</p>
+            <p class="text-xs"><a href="mailto:info@company.it">info@company.it</a></p>
         </div>
-        <div class="grid-child-contact-4 text-white pt-5">
-            <p class="text-xs">SOCIAL</p>
-            <img style="margin-right: 1rem" src="img/facebook.svg" alt="facebook_logo">
-            <img style="margin-right: 1rem" src="img/instagram.svg" alt="instagram_logo">
-            <img style="margin-right: 1rem" src="img/twitter.svg" alt="twitter_logo">
+        <div class="grid-child-contact-4 text-white pt-5 text-xs">
+            <h5 class="text-xs">SOCIAL</h5>
+            <a href="https://it-it.facebook.com/LotrekAgency/"
+               target="_blank">
+                <img style="margin-right: 1rem" src="img/facebook.svg" alt="Seguici su Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/lotrek/"
+               target="_blank">
+                <img style="margin-right: 1rem" src="img/linkedin.svg" alt="Seguici su LinkedIn">
+            </a>
+            <a href="https://twitter.com/lotrekagency"
+               target="_blank">
+                <img style="margin-right: 1rem" src="img/twitter.svg" alt="Seguici su Twitter">
+            </a>
         </div>
     </section>
 
