@@ -38,7 +38,8 @@
             <a class="nav-custom-link" href="#" aria-label="Conosci i nostri prodotti">Products</a>
             <a class="nav-custom-link" href="#" aria-label="Scopri chi siamo">About</a>
         </div>
-        <a href="javascript:void(0);" class="icon pr-5" onclick="toggleMenu()">
+<!--        onclick="toggleMenu()"-->
+        <a href="javascript:void(0);" class="icon pr-5" id="toggleMenu" >
             <i class="fa fa-bars show-icon"
                id="openIcon"
                role="button"
@@ -176,31 +177,18 @@
     </footer>
 
     <script>
-        function toggleMenu() {
-            let topNav = document.getElementById("topNav");
-            let openIcon = document.getElementById("openIcon");
-            let closeIcon = document.getElementById("closeIcon");
+        const button = document.querySelector('#toggleMenu');
+        const topNav = document.querySelector('#topNav');
+        const openIcon = document.querySelector('#openIcon');
+        const closeIcon = document.querySelector('#closeIcon');
+        button.addEventListener('click', () => {
+            topNav.classList.toggle('responsive');
+            openIcon.classList.toggle('show-icon');
+            openIcon.classList.toggle('hide-icon');
+            closeIcon.classList.toggle('show-icon');
+            closeIcon.classList.toggle('hide-icon');
 
-            if (topNav.classList.contains("responsive")) {
-                topNav.classList.remove('responsive');
-
-                // Soluzione non particolarmente elegante per cambiare icona
-
-                closeIcon.classList.add('hide-icon');
-                closeIcon.classList.remove('show-icon');
-                openIcon.classList.add('show-icon');
-                openIcon.classList.remove('hide-icon');
-            } else {
-                topNav.classList.add('responsive');
-
-                // Soluzione non particolarmente elegante per cambiare icona
-
-                openIcon.classList.add('hide-icon');
-                openIcon.classList.remove('show-icon');
-                closeIcon.classList.add('show-icon');
-                closeIcon.classList.remove('hide-icon');
-            }
-        }
+        });
     </script>
 
 </body>
